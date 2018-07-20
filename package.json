@@ -1,0 +1,43 @@
+{
+  "author": "Garrett Boatman <hello@garrettboatman.com>",
+  "name": "orion_api",
+  "description": "Restful API for Orion APP using nodejs, redis, Postgresql",
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "dependencies": {
+    "actionhero": "19.0.1",
+    "add-subtract-date": "^1.0.13",
+    "bcrypt": "^3.0.0",
+    "ioredis": "latest",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "uniqid": "^5.0.3",
+    "ws": "latest"
+  },
+  "devDependencies": {
+    "jest": "latest",
+    "standard": "latest"
+  },
+  "scripts": {
+    "start": "actionhero start",
+    "actionhero": "actionhero",
+    "pretest": "standard",
+    "test": "jest"
+  },
+  "standard": {
+    "ignore": [
+      "public/javascript/ActionheroWebsocketClient.*"
+    ],
+    "globals": [
+      "describe",
+      "test",
+      "beforeAll",
+      "beforeEach",
+      "afterAll",
+      "afterEach",
+      "expect"
+    ]
+  }
+}
